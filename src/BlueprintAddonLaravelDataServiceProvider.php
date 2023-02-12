@@ -2,7 +2,6 @@
 
 namespace MPK\BlueprintAddonLaravelData;
 
-use MPK\BlueprintAddonLaravelData\Commands\BlueprintAddonLaravelDataCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
