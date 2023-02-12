@@ -1,9 +1,9 @@
-# :package_description
+# Generate Laravel Data objects with Laravel Blueprint
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/:vendor_slug/:package_slug/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/:vendor_slug/:package_slug/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/matthewpaulking/blueprint-addon-laravel-data.svg?style=flat-square)](https://packagist.org/packages/matthewpaulking/blueprint-addon-laravel-data)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/matthewpaulking/blueprint-addon-laravel-data/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/matthewpaulking/blueprint-addon-laravel-data/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/matthewpaulking/blueprint-addon-laravel-data/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/matthewpaulking/blueprint-addon-laravel-data/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/matthewpaulking/blueprint-addon-laravel-data.svg?style=flat-square)](https://packagist.org/packages/matthewpaulking/blueprint-addon-laravel-data)
 
 An addon for Laravel Blueprint that generates Laravel Data objects.
 
@@ -12,20 +12,20 @@ An addon for Laravel Blueprint that generates Laravel Data objects.
 You can install the package via composer:
 
 ```bash
-composer require :vendor_slug/:package_slug
+composer require matthewpaulking/blueprint-addon-laravel-data
 ```
 
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-migrations"
+php artisan vendor:publish --tag="blueprint-addon-laravel-data-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-config"
+php artisan vendor:publish --tag="blueprint-addon-laravel-data-config"
 ```
 
 This is the contents of the published config file:
@@ -38,14 +38,14 @@ return [
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-views"
+php artisan vendor:publish --tag="blueprint-addon-laravel-data-views"
 ```
 
 ## Usage
 
 ```php
-$variable = new VendorName\Skeleton();
-echo $variable->echoPhrase('Hello, VendorName!');
+$blueprintAddonLaravelData = new MPK\BlueprintAddonLaravelData();
+echo $blueprintAddonLaravelData->echoPhrase('Hello, MPK!');
 ```
 
 ## Testing
@@ -68,7 +68,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
--   [:author_name](https://github.com/:author_username)
+-   [Matthew King](https://github.com/matthewpaulking)
 -   [All Contributors](../../contributors)
 
 ## License
