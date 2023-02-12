@@ -17,7 +17,6 @@ class BlueprintAddonLaravelDataServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('blueprint-addon-laravel-data')
-            ->hasConfigFile('blueprint-addon-laravel-data')
-            ->hasCommand(BlueprintAddonLaravelDataCommand::class);
+            ->hasConfigFile('blueprint-addon-laravel-data');
     }
 }
